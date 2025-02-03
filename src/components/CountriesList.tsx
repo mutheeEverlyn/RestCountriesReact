@@ -58,7 +58,7 @@ const CountriesList: React.FC<CountriesListProps> = ({ onSelectCountry }) => {
               <h3>{country.name}</h3>
               <p>Population: {country.population.toLocaleString()}</p>
               <p>Region: {country.region}</p>
-              <p>Capital: {country.capital?.[0]}</p>
+              <p>Capital: {country.capital}</p>
             </div>
           </div>
         ))}
