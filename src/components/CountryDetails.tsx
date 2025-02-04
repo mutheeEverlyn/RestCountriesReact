@@ -22,7 +22,7 @@ interface CountryDetailsProps {
 const CountryDetails: React.FC<CountryDetailsProps> = ({ country, onBack }) => {
   return (
     <div>
-      <button onClick={onBack}>Back</button>
+      <button onClick={onBack}>⏪Back</button>
       <div className="country-details">
         <img src={country.flags.svg} alt={country.name} />
         <div>
