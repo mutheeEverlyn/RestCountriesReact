@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header: React.FC = () => {
-  const toggleTheme = () => {
+  const changeTheme = () => {
     document.body.classList.toggle('dark');
     const isDarkMode = document.body.classList.contains('dark');
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
     <header className="container">
       <div className="content">
         <h2 className="title"><a href="/">Where in the world?</a></h2>
-        <p className="theme" onClick={toggleTheme}><i className="fa-regular fa-moon"></i>&nbsp;&nbsp;Dark Mode</p>
+        <p className="theme" onClick={changeTheme}><i className="fa-regular fa-moon"></i>&nbsp;&nbsp;Dark Mode</p>
       </div>
     </header>
   );
